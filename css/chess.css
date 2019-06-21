@@ -1,0 +1,144 @@
+.box {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: #00C1DE; }
+
+.chess {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  z-index: 999; }
+
+.black {
+  background: black; }
+
+.white {
+  background: white; }
+
+.heng {
+  width: 560px;
+  height: 1px;
+  position: absolute;
+  left: 20px;
+  background: #07AF12;
+  transform: translate3d(-300%, 0, 0);
+  animation: shuiping 1s 1 ease forwards; }
+
+.shu {
+  position: absolute;
+  width: 1px;
+  height: 560px;
+  top: 20px;
+  background: #07AF12;
+  transform: translate3d(0, -300%, 0);
+  animation: down 1s 1 ease forwards; }
+
+.shu:nth-of-type(1) {
+  left: 20px; }
+
+.shu:nth-of-type(2) {
+  left: 60px; }
+
+.shu:nth-of-type(3) {
+  left: 100px; }
+
+.shu:nth-of-type(4) {
+  left: 140px; }
+
+.shu:nth-of-type(5) {
+  left: 180px; }
+
+.shu:nth-of-type(6) {
+  left: 220px; }
+
+.shu:nth-of-type(7) {
+  left: 260px; }
+
+.shu:nth-of-type(8) {
+  left: 300px; }
+
+.shu:nth-of-type(9) {
+  left: 340px; }
+
+.shu:nth-of-type(10) {
+  left: 380px; }
+
+.shu:nth-of-type(11) {
+  left: 420px; }
+
+.shu:nth-of-type(12) {
+  left: 460px; }
+
+.shu:nth-of-type(13) {
+  left: 500px; }
+
+.shu:nth-of-type(14) {
+  left: 540px; }
+
+.shu:nth-of-type(15) {
+  left: 580px; }
+
+.heng:nth-of-type(1) {
+  top: 20px; }
+
+.heng:nth-of-type(2) {
+  top: 60px; }
+
+.heng:nth-of-type(3) {
+  top: 100px; }
+
+.heng:nth-of-type(4) {
+  top: 140px; }
+
+.heng:nth-of-type(5) {
+  top: 180px; }
+
+.heng:nth-of-type(6) {
+  top: 220px; }
+
+.heng:nth-of-type(7) {
+  top: 260px; }
+
+.heng:nth-of-type(8) {
+  top: 300px; }
+
+.heng:nth-of-type(9) {
+  top: 340px; }
+
+.heng:nth-of-type(10) {
+  top: 380px; }
+
+.heng:nth-of-type(11) {
+  top: 420px; }
+
+.heng:nth-of-type(12) {
+  top: 460px; }
+
+.heng:nth-of-type(13) {
+  top: 500px; }
+
+.heng:nth-of-type(14) {
+  top: 540px; }
+
+.heng:nth-of-type(15) {
+  top: 580px; }
+
+@keyframes shuiping {
+  form {
+    transform: translate3d(-300%, 0, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes down {
+  form {
+    transform: translate3d(0, -300%, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }

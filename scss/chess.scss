@@ -1,0 +1,68 @@
+@import "mixin";
+@import "var";
+
+
+.box{
+  width: $w;
+  height: $w;
+  @include center;
+  background: #00C1DE;
+}
+.chess{
+  width: 2*$r;
+  height: 2*$r;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  z-index: 999;
+}
+.black{
+  background: black;
+}
+.white{
+  background: white;
+}
+.heng{
+  width: $w - $r*2;
+  height: 1px;
+  position: absolute;
+  left: $r;
+  background: #07AF12;
+  transform: translate3d(-300%,0,0);
+  animation: shuiping 1s 1 ease forwards;
+}
+.shu{
+  position: absolute;
+  width: 1px;
+  height: $w - $r*2;
+  top: $r;
+  background: #07AF12;
+  transform: translate3d(0,-300%,0);
+  animation: down 1s 1 ease forwards;
+}
+@for $i from 1 to 16{
+    .shu:nth-of-type(#{$i}){
+      left: (2*$i - 1)*$r;
+    }
+  }
+@for $i from 1 to 16{
+  .heng:nth-of-type(#{$i}){
+    top: (2*$i - 1) *$r;
+  }
+}
+@keyframes  shuiping{
+  form{
+    transform: translate3d(-300%,0,0);
+  }
+  to{
+    transform: translate3d(0,0,0);
+  }
+}
+@keyframes  down{
+  form{
+    transform: translate3d(0,-300%,0);
+  }
+  to{
+    transform: translate3d(0,0,0);
+  }
+}
